@@ -111,10 +111,6 @@ body{
     margin-right: 40px;
 }
 
-.header__link:first-child{
-    margin-left: 80px;
-}
-
 .header__link:last-child{
     margin-right: 0;
 }
@@ -126,8 +122,8 @@ body{
 .header__links{
     display: flex;
     justify-content: left;
-    padding: 13px 0;
     background-color: #F4F4F4;
+    padding: 13px 80px;
 }
 
 .wrapper{
@@ -241,7 +237,7 @@ body{
 
 button{
     padding: 11px;/*у макета они везде разные*/
-    border-radius: 5px/* 5px 5px 5px*/;
+    border-radius: 5px;
     border: 1px solid #757575;
     background-color: transparent;
     color: #757575;
@@ -263,8 +259,7 @@ button:hover, button:focus, button:active{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    line-height: 40px;/*если это убрать, съедет центрирование текста "By Submitting this application..." по вертикали, наверное, тогда этот текст тоже нужно оборачивать в див и задавать паддинг*/
-    align-content: center;
+    align-items: center;
     margin: 27px auto;
 }
 
@@ -272,7 +267,6 @@ button:hover, button:focus, button:active{
     width: 930px;
     display: flex;
     justify-content: space-around;
-    align-content: center;
     margin: 35px auto 10px;
 }
 
