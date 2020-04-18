@@ -347,18 +347,18 @@ a img:hover, a img:focus, a img:active{
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1240px;
+    max-width: 1280px;
     margin-bottom: 70px;
+}
+
+li{
+list-style-type: none;
 }
 
 .mini-intro__intro{
     background-color: #F8F8F9;
-    margin-right: 37px;
+    margin: 0 20px;
     position: relative;
-}
-
-.mini-intro__intro:last-child{
-    margin-right: 0;
 }
 
 .mini-intro{
