@@ -1,0 +1,248 @@
+/* arimo-regular - latin */
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/arimo-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Arimo Regular'), local('Arimo-Regular'),
+         url('../fonts/arimo-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/arimo-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/arimo-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/arimo-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/arimo-v13-latin-regular.svg#Arimo') format('svg'); /* Legacy iOS */
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0; 
+    margin: 0;
+    /*outline: 2px solid black;*/
+}
+
+.text{
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #4A4A4A;
+    text-align: left;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.sidebar{
+    flex-basis: 255px;
+    flex-grow: 0;
+    padding: 20px 40px 20px 20px;
+}
+
+.content{
+    background: rgba(0, 84,254, 0.04);
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: 20px 30px;
+}
+
+.blue_back{
+    background: rgba(0, 84,254, 0.04);
+    border-radius: 8px;
+}
+
+.white_back{
+    background: white;
+    border-radius: 5px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sidebar_header{
+    margin-bottom: 10px;
+}
+
+.dash_name{
+    margin-bottom: 10px;
+}
+
+.dash_content{
+    min-height: 165px;
+}
+
+.sidebar_wrapper{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.dashboard{
+    margin-bottom: 10px;
+}
+
+.content_wrapper{
+    display:flex;
+    flex-direction: column;
+}
+
+.content_box{
+    margin-bottom: 20px;
+}
+
+.content_box_name{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.test_objective{
+    min-height: 185px;
+    width: 50%;
+    margin-right: 30px;
+    padding: 12px 15px;
+    flex-grow: 1;
+}
+
+.grey_text{
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.test_objective:last-child{
+    margin-right: 0;
+}
+
+.test_objectives{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.test_prep{
+    min-height: 185px;
+    width: 100%;
+    margin-right: 30px;
+    padding: 25px 25px 15px 20px;
+    margin: 13px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.test_tasks{
+    flex-basis: 195px;
+    flex-grow: 0;
+    padding: 8px;
+    margin-bottom: 13px;
+}
+
+.test_tasks_list{
+    margin-top: 7px;
+}
+
+.test_plan{
+    margin: 0 16px;
+    flex-grow: 1;
+    padding: 14px 11px 7px;
+}
+
+.test_steps{
+    padding: 16px 0 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.test_step{
+    margin-right: 10px;
+    min-height: 158px;
+    flex-grow: 1;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test_step:last-child{
+    margin-right: 0;
+}
+
+.test_prep_1{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.test_prep_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.test_prep_2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.test_checks{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 38px 12px 4px;
+}
+
+.test_check{
+    flex-grow: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.test_checkbox{
+    margin-right: 6px;
+}
+
+.checkbox_with_text{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.checkbox_with_text:last-child{
+    margin-bottom: 0;
+}
+
+.checkbox_with_text_mini{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.checkbox_with_text:last-child{
+    margin-bottom: 0;
+}
+
+.test_check_desc{
+    padding: 10px 0 5px 20px;
+}
+
+.text_mini{
+    font-size: 12px;
+}
+
+.text_bold{
+    font-weight: bold;
+}
