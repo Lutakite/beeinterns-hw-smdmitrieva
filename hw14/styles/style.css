@@ -1,0 +1,150 @@
+/* roboto-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0; 
+    margin: 0;
+    /*outline: 2px solid black;*/
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #5D5D5D;
+    text-align: left;
+}
+
+.wrapper{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.content{
+    margin-top: 60px;
+}
+
+.content > h1{
+    font-weight: bold;
+    font-size: 35px;
+    color: #000000;
+}
+
+.content > h3{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content p > a{
+    color: rgb(44, 116, 250);
+}
+
+.content p > a:hover, .content p > a:focus, .content p > a:active{
+    color: rgb(32, 32, 182);
+}
+
+.content p{
+    margin: 20px 0;
+}
+
+.quote{
+    max-width: 578px;
+    margin: 20px 40px 20px 20px;
+    position: relative;
+    display: none;
+}
+
+.quote::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 2px solid #0179FF;
+    height: calc(100% + 50px);
+    left: -30px;
+    top: -30px;
+}
+
+.quote > img{
+    display: block; 
+    margin: 0 auto;
+    max-width: 90vw;
+    height: auto;
+}
+
+.quotes{
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.quote_name{
+    text-decoration: none;
+    display: block;
+    color: #5D5D5D;
+    padding: 15px 35px;
+    background: #F5F5F5;
+    outline: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.quote_name:focus::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+    border-left: 1px solid rgba(0, 0, 0, 0.65);
+    width: 7px;
+    height: 7px;
+    transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -2, 6);
+}
+
+.quote_name:focus + .quote{
+    display: block;
+}
+
+.quote_name::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+    border-left: 1px solid rgba(0, 0, 0, 0.65);
+    width: 7px;
+    height: 7px;
+    transform: matrix(-0.7071, 0.7071, 0.7071, 0.7071, -2, 6);
+}
+
+.quote_name::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 2px solid #0179FF;
+    height: 56.5%;
+    left: -10px;
+    top: 10px;
+}
