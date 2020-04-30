@@ -1,0 +1,602 @@
+/* titillium-web-regular - latin */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/titillium-web-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
+         url('../fonts/titillium-web-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/titillium-web-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/titillium-web-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/titillium-web-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/titillium-web-v8-latin-regular.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0; 
+    margin: 0;
+    /*outline: 2px solid black;*/
+}
+
+.text{
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: white;
+    text-align: left;
+}
+
+.wrapper{
+    background-image: url(../img/img1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    background-color: rgba(0,0,0,.47);
+    border-bottom: 1px solid #A3A3A3;
+}
+
+.header_links{
+    display: none;
+}
+
+.rectangle{
+    width: 5px;
+    height: 5px;
+    background: white;
+}
+
+.blocks{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 19px;
+    height: 19px;
+}
+
+.models{
+    min-width: 140px;
+    padding: 20px 20px 15px;
+    display: flex;
+    position: relative;
+    border-right: 1px solid #A3A3A3;
+}
+
+.models::before{    
+    position: absolute;
+    left: 61px;
+    top: 54px;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: white;
+}
+
+.models_text{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 28px;
+}
+
+a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
+    opacity: 0.5;
+}
+
+.search-btn:active, .search-btn:focus, .button:active, .button:focus{
+    outline: none;
+}
+
+.search_form{
+    border: none;
+    height: auto;
+    display: flex;
+}
+
+.search-btn{
+    border: none;
+    background: transparent;
+    padding: 10px 10px 0;
+}
+
+.search-btn, .button{
+    cursor: pointer;
+}
+
+.search_form img{
+    width: 10px;
+    height: auto;
+}
+
+.search-form__field{
+    background: transparent;
+    border: none;
+    margin-top: 25px;
+    max-width: 140px;
+}
+
+.search-form__field::placeholder{
+    color: white;
+    font-size: 13px;
+}
+
+.main{
+    background-color: rgba(0,0,0,.47);
+    padding: 20px;
+}
+
+main h1{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.h1_content{
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+.action, .info_name{
+    font-size: 15px;
+}
+
+.action{
+    display: flex;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.action:last-child{
+    margin-bottom: 12px;
+}
+
+
+.info_block{
+    margin-bottom: 5px;
+}
+
+.action_icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #F92251;
+}
+
+.play{
+    background-color:#F92251;
+    position: relative;
+}
+
+.play img, .later img{
+    width: auto;
+    height: 6px;
+    top: 5px;
+    position: absolute;
+}
+
+.play img{
+    left: 6px;
+}
+
+.later img{
+    left: 5px;
+}
+
+.inverted{
+    filter: invert(100%);
+}
+
+.later{
+    position: relative;
+}
+
+.star{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+
+.sign_up{
+    background: linear-gradient(0deg, rgba(9, 9, 9, 0.465718), rgba(9, 9, 9, 0.465718)), #1F1F2F;
+    padding: 30px 20px 40px;
+}
+
+.sign_up_desc{
+    margin-bottom: 20px;
+}
+
+.sign_up_form_input{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sign_up_input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 39px;
+    border: none;
+    background-color: white;
+    color: #82868E;
+}
+
+.sign_up_form_icon{
+    position: absolute;
+    width: 13px;
+    height: auto;
+    left: 12px;
+}
+
+.sign_up_form_icon_name{
+    top: 8px;
+}
+
+.sign_up_form_icon_email{
+    top: 11px;
+}
+
+.sign_up_button{
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #F92251;
+    color: white;
+}
+
+
+.footer{
+    background-color: #404754;
+    padding: 20px;
+}
+
+.footer_link a, .copyright{
+    color: #BAC5D3;
+}
+
+.footer_link{
+    margin-bottom: 8px;
+}
+
+.footer_link:last-child{
+    margin-bottom: 0;
+}
+
+.footer_links{
+    margin-bottom: 18px;
+}
+
+
+@media (min-width: 768px){
+    .wrapper{
+        background-image: url(../img/img3.jpg);
+        background-size: 185% auto;
+    }
+    .rectangle{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .blocks{
+        width: 38px;
+        height: 38px;
+    }
+
+    .models{
+        min-width: 200px;
+        padding: 10px 20px;
+    }
+
+    .models_text{
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .models::before{    
+        left: 97px;
+    }
+
+    .search_form img{
+        width: 20px;
+    }
+    
+    .search-btn{
+        padding: 10px 20px 0 40px;
+    }
+    
+    .search-form__field::placeholder{
+        font-size: 14px;
+    }
+    
+    .search-form__field{
+        max-width: 500px;
+    }
+    
+    .main{
+        padding: 50px 93px 70px;
+    }
+
+    .main h1{
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+    .h1_content{
+        max-width: 450px;
+        margin-bottom: 30px;
+    }
+
+    .info_blocks{
+        display: flex;
+        max-width: 600px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .info_block{
+        margin-right: 70px;
+    }
+
+    .action, .info_name{
+        font-size: 18px;
+    }
+
+    .info{
+        font-size: 24px;
+    }
+    
+    .info_block{
+        margin-bottom: 10px;
+    }
+    
+    .star{
+        width: 23px;
+        height: 23px;
+        margin-right: 18px;
+    }
+
+    .star:last-child{
+        margin-right: 24px;
+    }
+
+    .actions{
+        display: flex;
+    }
+
+    .action{
+        margin-right: 50px;
+        margin-bottom: 72px;
+        line-height: 50px;
+    }
+
+    .action:last-child{
+        margin-right: 0;
+    }
+
+    .action_icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+        border: 2px solid #F92251;
+    }
+    
+    .play{
+        background-color:#F92251;
+        position: relative;
+    }
+    
+    .play img, .later img{
+        width: auto;
+        height: 18px;
+        top: 14px;
+        position: absolute;
+    }
+    
+    .play img{
+        left: 16px;
+    }
+    
+    .later img{
+        left: 14px;
+    }
+    
+    .sign_up_wrap{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .sign_up_desc{
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 53px;
+    }
+
+    .sign_up{
+        background: linear-gradient(0deg, rgba(9, 9, 9, 0.465718), rgba(9, 9, 9, 0.465718)), #1F1F2F;
+        padding-bottom: 70px;
+    }
+
+    .form{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .sign_up_inputs{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sign_up_form_input{
+        max-width: 210px;
+        margin-bottom: 50px;
+    }
+
+    .sign_up_input, .sign_up_button{
+        padding: 13px 33px;
+    }
+    
+    .sign_up_form_icon{
+        width: 16px;
+        left: 7px;
+    }
+
+    .sign_up_form_icon_name{
+        top: 11px;
+    }
+
+    .sign_up_form_icon_email{
+        top: 15px;
+    }
+    
+    .search-form__field::placeholder{
+        font-size: 17px;
+    }
+    
+    .footer{
+        padding: 30px 30px 20px;
+    }
+    
+    .footer_link a, .copyright{
+        font-size: 20px;
+    }
+    
+    .footer_link{
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .footer_link:last-child{
+        margin-right: 0;
+    }
+    
+    .footer_links{
+        display: flex;
+        margin-bottom: 18px;
+    }
+    
+}
+
+
+@media (min-width: 1440px){
+    .wrapper{
+        background-image: url(../img/img3.jpg);
+        background-size: 100%;
+    }
+
+    .blocks{
+        display: none;
+    }
+
+    .models_text{
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .header_links{
+        display: flex;
+    }
+
+    .models{
+        width: 60%;
+        padding: 25px 0 25px 225px;
+    }
+
+    .models::after{
+        position: absolute;
+        top: 0;
+        left: 40px;
+        content: "";
+        width: 65px;
+        height: 80px;
+        background-image: url(../img/domo-kun-logo.png);
+    }
+
+    .models::before{    
+        position: absolute;
+        left: 221px;
+        top: 79px;
+        content: "";
+        width: 70px;
+        height: 4px;
+        background: white;
+    }
+
+    .search-form__field{
+        margin-top: 37px;
+    }
+    
+    .main{
+        padding: 80px 216px 121px;
+    }
+
+    .info_blocks{
+        margin-bottom: 10px;
+        max-width: 1200px;
+    }
+    
+    .sign_up_wrap{
+        max-width: 980px;
+    }
+
+    .sign_up_desc{
+        max-width: 788px;
+        font-size: 35px;
+        line-height: 53px;
+        margin-bottom: 40px;
+    }
+
+    .sign_up{
+        background: linear-gradient(0deg, rgba(9, 9, 9, 0.465718), rgba(9, 9, 9, 0.465718)), #1F1F2F;
+        padding: 60px 0 90px;
+    }
+
+    .form{
+        max-width: 980px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sign_up_form_input, .sign_up_button{
+        min-width: 300px;
+    }
+    
+    .sign_up_form_input{
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .sign_up_form_icon{
+        width: 16px;
+        left: 10px;
+    }
+
+    .footer{
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
