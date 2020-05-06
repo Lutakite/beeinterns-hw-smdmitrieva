@@ -11,7 +11,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="models">
-                <a href="#" class="blocks">
+                <div class="blocks">
                     <div class="rectangle"></div>
                     <div class="rectangle"></div>
                     <div class="rectangle"></div>
@@ -23,8 +23,10 @@
                     <div class="rectangle"></div>
                     <div class="rectangle"></div>
                     <div class="rectangle"></div>
-                </a>
-                <a href="#" class="models_text">Models</a>
+
+                    <a href="#" class="a_blocks"></a>
+                </div>
+                <a href="#" class="models_text menu_active">Models</a>
                 <div class="header_links">
                     <a href="#" class="models_text">Dimensions</a>
                     <a href="#" class="models_text">Facts & Figures</a>
@@ -33,15 +35,18 @@
                 </div>                
             </div>
 
-            <form class="search_form">
-                <button class="search-btn" type="submit"><img src="./img/search.png" alt=""/ class="search_form_img"></button>
-                <div><input type="text" name="search" class="search-form__field" placeholder="Search for details..."></div>
-            </form>
+            <div class="search">
+                <div class="search_form_img"><img src="./img/search.png" alt=""></div>
+                <form class="search_form">
+                    <div><input type="search" name="search" class="search-form__field" placeholder="Search for details..."></div>
+                    <button class="search-btn" type="submit"></button>
+                </form>
+            </div>
         </header>
 
         <main class="main">
             <div class="h1_content">
-                <h1>Honda Sport</br>CRF 450RX</h1>
+                <h1>Honda Sport<br />CRF 450RX</h1>
             </div>
             <div class="actions">
                 <a href="#" class="action">
@@ -55,27 +60,27 @@
             </div>
             <div class="info_blocks">
                 <div class="info_block">
-                    <div class="info_name">Manufacturer</div>
-                    <div class="info">Honda</div>
+                    <p class="info_name">Manufacturer</p>
+                    <p class="info">Honda</p>
                 </div>
                 <div class="info_block">
-                    <div class="info_name">Production</div>
-                    <div class="info">2019</div>
+                    <p class="info_name">Production</p>
+                    <p class="info">2019</p>
                 </div>
                 <div class="info_block">
-                    <div class="info_name">Engine</div>
-                    <div class="info">0.45 L PGM-FI</div>
+                    <p class="info_name">Engine</p>
+                    <p class="info">0.45 L PGM-FI</p>
                 </div>
             <!--/div>
             <div class="info_blocks-->
                 <div class="info_block">
-                    <div class="info_name">Reviews</div>
+                    <p class="info_name">Reviews</p>
                     <div class="info">
-                        <img src="./img/star_full.png" alt="" class="star"/>
-                        <img src="./img/star_full.png" alt="" class="star"/>
-                        <img src="./img/star_full.png" alt="" class="star"/>
-                        <img src="./img/star_full.png" alt="" class="star"/>
-                        <img src="./img/star.png" alt="" class="star"/>
+                        <img src="./img/star_full.svg" alt="" class="star"/>
+                        <img src="./img/star_full.svg" alt="" class="star"/>
+                        <img src="./img/star_full.svg" alt="" class="star"/>
+                        <img src="./img/star_full.svg" alt="" class="star"/>
+                        <img src="./img/star.svg" alt="" class="star"/>
                         4.0/5
                     </div>
                 </div>
@@ -90,8 +95,8 @@
                 </div>
                 <form action="/posturl/newsletter/" method="POST" name="form" class="form">
                     <div class="sign_up_inputs">
-                        <div class="sign_up_form_input"><img src="./img/icon_name.png" alt="" class="sign_up_form_icon sign_up_form_icon_name"/><input type="name" id="inputName" pattern="^[a-zA-Z]+$" minlength="2" maxlength="30" placeholder="Name" name="inputName" required class="sign_up_input"/></div>
-                        <div class="sign_up_form_input"><img src="./img/icon_email.png" alt="" class="sign_up_form_icon sign_up_form_icon_email"/><input type="email" id="inputEmail" placeholder="E-Mail" name="inputEmail" required class="sign_up_input"/></div>
+                        <div class="sign_up_form_input"><img src="./img/name.svg" alt="" class="sign_up_form_icon sign_up_form_icon_name"/><input type="text" id="inputName" pattern="^[a-zA-Z]+$" minlength="2" maxlength="30" placeholder="Name" name="inputName" required class="sign_up_input"/></div>
+                        <div class="sign_up_form_input"><img src="./img/email.svg" alt="" class="sign_up_form_icon sign_up_form_icon_email"/><input type="email" id="inputEmail" placeholder="E-Mail" name="inputEmail" required class="sign_up_input"/></div>
                     </div>
                     <div><button type="submit" class="sign_up_button button">Get started for free</button></div>
                 </form>

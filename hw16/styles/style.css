@@ -64,22 +64,32 @@ body{
     justify-content: space-between;
     width: 19px;
     height: 19px;
+    position: relative;
+}
+
+.a_blocks{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .models{
     min-width: 140px;
     padding: 20px 20px 15px;
     display: flex;
-    position: relative;
     border-right: 1px solid #A3A3A3;
 }
 
-.models::before{    
+.menu_active{
+    position: relative;
+}
+
+.menu_active::before{    
     position: absolute;
-    left: 61px;
-    top: 54px;
+    left: -7px;
+    top: 34px;
     content: "";
-    width: 60px;
+    width: calc(100% + 14px);
     height: 4px;
     background: white;
 }
@@ -95,8 +105,8 @@ a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
     opacity: 0.5;
 }
 
-.search-btn:active, .search-btn:focus, .button:active, .button:focus{
-    outline: none;
+.search{
+    display: flex;
 }
 
 .search_form{
@@ -106,16 +116,14 @@ a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
 }
 
 .search-btn{
-    border: none;
-    background: transparent;
-    padding: 10px 10px 0;
+    visibility: hidden;
 }
 
-.search-btn, .button{
-    cursor: pointer;
+.search_form_img{
+    margin: 20px 10px 0 10px;
 }
 
-.search_form img{
+.search_form_img img{
     width: 10px;
     height: auto;
 }
@@ -125,11 +133,17 @@ a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
     border: none;
     margin-top: 25px;
     max-width: 140px;
+    color: white;
+}
+
+.search-form__field:focus{
+    outline: none;
+    border-bottom: 1px solid white;
 }
 
 .search-form__field::placeholder{
-    color: white;
     font-size: 13px;
+    color: white;
 }
 
 .main{
@@ -225,6 +239,11 @@ main h1{
     margin-bottom: 20px;
 }
 
+.form{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 .sign_up_form_input{
     margin-bottom: 20px;
     position: relative;
@@ -233,9 +252,13 @@ main h1{
 .sign_up_input{
     width: 100%;
     border-radius: 10px;
-    padding: 8px 39px;
+    padding: 9px 39px;
     border: none;
     background-color: white;
+    color: black;
+}
+
+.sign_up_input::placeholder{
     color: #82868E;
 }
 
@@ -247,7 +270,7 @@ main h1{
 }
 
 .sign_up_form_icon_name{
-    top: 8px;
+    top: 9px;
 }
 
 .sign_up_form_icon_email{
@@ -257,7 +280,7 @@ main h1{
 .sign_up_button{
     width: 100%;
     border-radius: 10px;
-    padding: 8px;
+    padding: 9px;
     text-transform: uppercase;
     border: none;
     background-color: #F92251;
@@ -313,16 +336,16 @@ main h1{
         margin-top: 5px;
     }
 
-    .models::before{    
-        left: 97px;
+    .menu_active::before{    
+        top: 39px;
     }
 
-    .search_form img{
+    .search_form_img img{
         width: 20px;
     }
-    
-    .search-btn{
-        padding: 10px 20px 0 40px;
+
+    .search_form_img{
+        margin: 22px 22px 0 40px;
     }
     
     .search-form__field::placeholder{
@@ -440,11 +463,6 @@ main h1{
         padding-bottom: 70px;
     }
 
-    .form{
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
     .sign_up_inputs{
         display: flex;
         justify-content: space-between;
@@ -456,7 +474,7 @@ main h1{
     }
 
     .sign_up_input, .sign_up_button{
-        padding: 13px 33px;
+        padding: 19px 33px;
     }
     
     .sign_up_form_icon{
@@ -465,15 +483,11 @@ main h1{
     }
 
     .sign_up_form_icon_name{
-        top: 11px;
+        top: 17px;
     }
 
     .sign_up_form_icon_email{
-        top: 15px;
-    }
-    
-    .search-form__field::placeholder{
-        font-size: 17px;
+        top: 21px;
     }
     
     .footer{
@@ -525,7 +539,7 @@ main h1{
         padding: 25px 0 25px 225px;
     }
 
-    .models::after{
+    .models::before{
         position: absolute;
         top: 0;
         left: 40px;
@@ -534,15 +548,13 @@ main h1{
         height: 80px;
         background-image: url(../img/domo-kun-logo.png);
     }
+    
+    .menu_active::before{    
+        top: 49px;
+    }
 
-    .models::before{    
-        position: absolute;
-        left: 221px;
-        top: 79px;
-        content: "";
-        width: 70px;
-        height: 4px;
-        background: white;
+    .search_form_img{
+        margin: 32px 30px 0 40px;
     }
 
     .search-form__field{
@@ -578,6 +590,18 @@ main h1{
         max-width: 980px;
         display: flex;
         justify-content: space-between;
+    }
+
+    .sign_up_input, .sign_up_button{
+        padding: 17px 33px;
+    }
+
+    .sign_up_form_icon_name{
+        top: 16px;
+    }
+
+    .sign_up_form_icon_email{
+        top: 19px;
     }
 
     .sign_up_form_input, .sign_up_button{
