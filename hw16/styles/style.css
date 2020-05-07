@@ -37,14 +37,13 @@ body{
 }
 
 .wrapper{
-    background-image: url(../img/img1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/img1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .header{
     display: flex;
-    background-color: rgba(0,0,0,.47);
     border-bottom: 1px solid #A3A3A3;
 }
 
@@ -120,7 +119,7 @@ a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
 }
 
 .search_form_img{
-    margin: 20px 10px 0 10px;
+    margin: 17px 10px 0 10px;
 }
 
 .search_form_img img{
@@ -134,6 +133,7 @@ a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
     margin-top: 25px;
     max-width: 140px;
     color: white;
+    padding-bottom: 5px;
 }
 
 .search-form__field:focus{
@@ -147,7 +147,6 @@ a:hover, a:focus, a:active, .button:hover, .button:focus, .button:active{
 }
 
 .main{
-    background-color: rgba(0,0,0,.47);
     padding: 20px;
 }
 
@@ -312,7 +311,7 @@ main h1{
 
 @media (min-width: 768px){
     .wrapper{
-        background-image: url(../img/img3.jpg);
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/img3.jpg);
         background-size: 185% auto;
     }
     .rectangle{
@@ -517,7 +516,6 @@ main h1{
 
 @media (min-width: 1440px){
     .wrapper{
-        background-image: url(../img/img3.jpg);
         background-size: 100%;
     }
 
