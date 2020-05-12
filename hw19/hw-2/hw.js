@@ -8,6 +8,5 @@ function houseWork(argA, argB) {
     const a = argA;
     const b = argB;    
     // начало здесь
-
-    
+    alert(`Сумма чисел ${a} и ${b} равна: ${Number(a)+Number(b)}`);
 } // код не должен выходить за закрывающую скобку

@@ -6,14 +6,15 @@
     следуя рекомендациям по именованию переменных
 */
 
-var age = 20;
-var text = 'Ваш возраст: ' + Age + ' лет';
+
+let age = 20;
+let text = `Ваш возраст: ${age} лет`;
 alert(text); // Должен вывести: Ваш возраст: 20 лет
 
 
-var hours = 12;
-var minutes = 45;
-hours = hours + 1;
-var textwithtime = 'Текущее время: ' + hours + ':' + minutes;
+let hours = 12;
+let minutes = 45;
+hours += 1;
+let textWithTime = `Текущее время: ${hours}:${minutes}`;
 
-alert(textwithtime); // Должен вывести: Текущее время: 13:45
+alert(textWithTime); // Должен вывести: Текущее время: 13:45
