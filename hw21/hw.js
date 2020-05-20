@@ -8,7 +8,7 @@ const firstObject = {
 };
 
 function resolve1(inputObject) {
-  let result = {};
+  const result = {};
   for (key in inputObject) {
     result[inputObject[key]] = key;
   }
@@ -30,7 +30,7 @@ const secondObject = {
 };
 
 function resolve2(inputObject) {
-  let result = {};
+  const result = {};
   for (key in inputObject) {
     result[inputObject[key]] = key;
   }
@@ -49,10 +49,7 @@ console.log(result2);
 // Использовать Глобальный объект Math
 
 function centuryFromYear(year) {
-  if (year % 100 == 0) {
-    return Math.trunc(year/100);
-  }
-  return Math.trunc(year/100)+1;
+  return Math.ceil(year/100);
 }
 
 const year = 1905;
