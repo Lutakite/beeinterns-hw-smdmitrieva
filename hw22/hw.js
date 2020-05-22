@@ -2,10 +2,11 @@
 
 let i = 0;
 
-for (??; i <= 50; ??) {
+for (i=10; i <= 50; i+=10) {
   console.log(i);
 }
 // Ожидаемый результат: 10 20 30 40 50
+
 
 // Задание 2
 /*
@@ -13,6 +14,11 @@ for (??; i <= 50; ??) {
   С помощью которой можно создать объект
   { profession: 'hero', name: 'Кларк', secondName: 'Кент' }
 */
+function Men(name, surname) {
+  this.profession = 'hero';
+  this.name = name;
+  this.secondName = surname;
+}
 
 const superman = new Men('Кларк', 'Кент');
 console.log('superman: ', superman);
@@ -21,16 +27,22 @@ console.log('superman: ', superman);
 
 // Задание 3
 // Напишите функцию sum, которая работает так: sum(a)(b) возвращает a + b.
-sum(1)(2);  // 3
-sum(5)(-1); // 4
+function sum(a) {
+  return function(b) {
+    return a + b;
+  }
+}
+
+console.log(sum(1)(2));  // 3
+console.log(sum(5)(-1)); // 4
 
 
 // Задание 4
 // Измените код так, чтобы console.log выводил последовательно символы 'П т и ц а'
 const bird = ['П', 'т', 'и', 'ц', 'а'];
 
-for (var index = 0; index < bird.length; index++) {
-  setTimeout(function(index) {
+for (let index = 0; index < bird.length; index++) {
+  setTimeout(function() {
     console.log(bird[index]);
   }, 100);
 }
