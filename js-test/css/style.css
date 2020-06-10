@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Halant';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/halant-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Halant Regular'), local('Halant-Regular'),
+       url('../fonts/halant-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/halant-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/halant-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/halant-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/halant-v7-latin-regular.svg#Halant') format('svg'); /* Legacy iOS */
+}
+
+body{
+  background-color: #282828;
+}
+
+.text{
+  font-family: 'Halant';
+  font-size: 16px;
+  color: white;
+}
+
+.wrapper{
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282828;
+}
+
+.header_wrapper{
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 7px 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.chat{
+  max-width: 335px;
+  padding: 30px 20px;
+}
+
+.chat_history{
+  height: calc(100vh - 130px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat_history::-webkit-scrollbar { width: 0; }
+
+.message_block{
+  display: flex;
+  align-items: flex-start;
+  min-height: 70px;
+  margin-bottom: 30px;
+}
+
+.icon{
+  margin-right: 20px;
+}
+
+.message{
+  border-radius: 35px;
+  padding: 20px;
+  color: black;
+}
+
+.user_message{
+  background: #F9C35B;
+}
+
+.bot_message{
+  background: #F1F0F0;
+}
+
+.chat_input{
+  background-color: white;
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.form{
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 375px;
+}
+
+.text_input{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.dots{
+  position: relative;
+  right: 100px;
+  top: 25px;
+  display: flex;
+}
+
+.dot1, .dot2, .dot3{
+  display: none;
+}
+
+.dot{
+  background-color: grey;
+  height: 2px;
+  width: 2px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.button{
+  border: none;
+  outline: none;
+  background: transparent;
+  height: 34px;
+  width: 39px;
+  background-image: url("../img/Path.svg");
+}
+
+@media (min-width: 768px){
+
+  .chat{
+    border: 1px solid #EDEDED;
+    border-radius: 38px;
+  }
+
+  .chat_input, .header{
+    position: static;
+  }
+
+  .wrapper, .header_wrapper, .chat, .form{
+    max-width: 700px;
+  }
+
+  .chat_input{
+    border-radius: 32px;
+    margin-bottom: 10px;
+  }
+
+  .header_wrapper{
+    padding: 50px 20px 30px;
+    font-size: 58px;
+  }
+
+  .chat_history{
+    height: calc(100vh - 400px);
+  }
+
+  .text_input{
+    min-width: 550px;
+  }
+
+}
