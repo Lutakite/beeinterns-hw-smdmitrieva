@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Cookie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="loadFromCookies();">
+<form name="form" class="form">
+    <h1 class="heading">Форма</h1>
+    <fieldset class="fieldset">
+        <legend class="legend">Личные данные</legend>
+        <section class="inputContainer">
+            <label class="label" for="firstName">Имя</label>
+            <input class="inputField" type="text" id="firstName" name="firstName" />
+        </section>
+        <section class="inputContainer">
+            <label class="label" for="lastName">Фамилия</label>
+            <input class="inputField" type="text" id="lastName" name="lastName" />
+        </section>
+        <section class="inputContainer">
+            <label class="label" for="secondName">Отчество</label>
+            <input class="inputField" type="text" id="secondName" name="secondName" />
+        </section>
+        <section class="inputContainer">
+            <p>Выберите курсы:</p>
+            <label>
+                <input type="checkbox" name="checkbox1" id="checkbox1" />
+                1
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox2" id="checkbox2" />
+                2
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox3" id="checkbox3" />
+                3
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox4" id="checkbox4" />
+                4
+            </label>
+        </section>
+    </fieldset>
+    <button class="btn save" onclick="saveToCookies()">
+        Сохранить
+    </button>
+</form>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</body>
+</html>
