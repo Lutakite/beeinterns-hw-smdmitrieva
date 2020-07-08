@@ -8,7 +8,6 @@ const checkbox3 = document.querySelector('#checkbox3');
 const checkbox4 = document.querySelector('#checkbox4');
 
 const saveToCookies = () => {
-    event.preventDefault();
     document.cookie = "firstName" + "=" + firstName.value;
     document.cookie = "lastName" + "=" + lastName.value;
     document.cookie = "secondName" + "=" + secondName.value;
@@ -26,10 +25,9 @@ const loadFromCookies = () => {
     checkbox2.checked = (Cookies.get('checkbox2') == 'true');
     checkbox3.checked = (Cookies.get('checkbox3') == 'true');
     checkbox4.checked = (Cookies.get('checkbox4') == 'true');
-}
+};
 
 const saveToStorage = () => {
-    event.preventDefault();
     let list = [];
     if (checkbox1.checked) {
         list.push(1);
@@ -52,25 +50,27 @@ const saveToStorage = () => {
     };
     console.log(person);
     localStorage.setItem("person",JSON.stringify(person));
-}
+};
 
 const loadFromStorage = () => {
     let person = JSON.parse(localStorage.getItem("person"));
     firstName.value = person.firstName;
     lastName.value = person.lastName;
     secondName.value = person.secondName;
-    for (i in person.courses) {
-        if (person.courses[i] == 1) {
-            checkbox1.checked = true
-        }
-        else if (person.courses[i] == 2) {
-            checkbox2.checked = true
-        }
-        else if (person.courses[i] == 3) {
-            checkbox3.checked = true
-        }
-        else if (person.courses[i] == 4) {
-            checkbox4.checked = true
+    for (let i in person.courses) {
+        if (person.courses.hasOwnProperty(i)) {
+            if (person.courses[i] === 1) {
+                checkbox1.checked = true;
+            }
+            else if (person.courses[i] === 2) {
+                checkbox2.checked = true;
+            }
+            else if (person.courses[i] === 3) {
+                checkbox3.checked = true;
+            }
+            else if (person.courses[i] === 4) {
+                checkbox4.checked = true;
+            }
         }
     }
-}
+};
