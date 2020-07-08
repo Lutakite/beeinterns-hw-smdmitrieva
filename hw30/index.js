@@ -1,9 +1,9 @@
 const text = document.querySelector('.result');
 
 const start = () => {
-    let result = prompt("Введите число", "1");
+    const result = prompt("Введите число", "1");
     window.frames.frame.postMessage(result, "*");
-}
+};
 
 window.addEventListener("message", function(event) {
     text.innerHTML = event.data;
