@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML Формы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper text">
+        <div class="header">
+            <div class="header_wrapper">
+                Чат-бот
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="chat_history">
+            </div>
+
+            <div class="chat_input">
+                <form class="form" onsubmit="return false">
+                    <input class="text_input" type="text" name="text"></input>
+                    <div class="dots"><div class="dot1 dot"></div><div class="dot2 dot"></div><div class="dot3 dot"></div></div>
+                    <button class="button" type="submit" disabled></button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="js/index.js"></script>
+</body>
+</html>
